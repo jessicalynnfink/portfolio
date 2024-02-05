@@ -25,6 +25,7 @@ header {
 #about {
     color: white;
     font-size: 80px;
+    background: url(tv-old.gif) ;
 }
 
 nav a {
@@ -49,7 +50,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(noise.gif) ;
+    background-color: darkslategrey;
 }
 
 }
