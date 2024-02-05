@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Helvetica Neue";
+    font-weight: black;
+    font-stretch: condensed;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 20px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: black;
+    display: flex;
+}
+
+#about {
+    color: white;
+    font-size: 80px;
+}
+
+nav a {
+    margin-left: 30px;
+
+}
+
+nav a:hover,
+nav a.active {
+    color: teal;
+}
+
+a:visited {
+    color: white;
+}
+
+
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f242d;
+}
