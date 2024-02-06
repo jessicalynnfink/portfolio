@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: "Helvetica Neue";
-    font-weight: bold;
-    font-stretch: condensed;
+    /* Needed for font */
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
     text-decoration: none;
+    background-color: black;
+    color: white;
 }
 
 header {
@@ -22,10 +26,10 @@ header {
     display: flex;
 }
 
+/* Main Text */
 #about {
     color: white;
     font-size: 80px;
-    background: url(tv-old.gif) ;
 }
 
 nav a {
@@ -50,23 +54,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: darkslategrey;
 }
 
-}
-.noise::before{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    content: "";
-    /* you can control opacity of noise  */
-    opacity: .1;  
-    z-index: 1000;
-    pointer-events: none;
-
-}
 .container{
     display: flex;
     align-items: center;
