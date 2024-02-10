@@ -4,11 +4,15 @@
     scroll-behavior: smooth;
     font-style: normal;
     text-decoration: none;
-    background-color: black;
     color: white;
 }
 
+#name {
+    color: #D9043D;
+}
+
 header {
+    background: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -18,8 +22,8 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background-color: black;
     display: flex;
+    font-weight: 500;
 }
 
 body {
@@ -27,6 +31,8 @@ body {
         font-family: "Roboto Condensed", sans-serif;
         font-optical-sizing: auto;
         font-weight: 300;
+        align-items: center;
+        background-image: url("test5.jpg");
 }
 
 /* navigation */
@@ -37,19 +43,23 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    color: teal;
+    color: #D9043D;
 }
 
 /* Main Text */
 section {
     min-height: 100vh;
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-    width: 90%;
-    margin-left: 150px;
-    margin-top: 175px;
+    align-items: center;
+    width: 100%;
+}
+
+#projects,
+#contact {
+    position: relative;
+    left: 50%;
+    margin-left: 100px;
 }
 
 .wrapper{
@@ -61,6 +71,7 @@ section {
     max-height: 500px;
     max-width: 1000px;
     font-weight: 500;
+    min-height: 100px;
 }
 
 .wrapper p{
@@ -72,16 +83,80 @@ section {
 
 span:before{
     content: '';
-    animation: animate infinite 3s;
+    animation: animate infinite 2s;
 }
 @keyframes animate{
     0%{
-        content: 'Developer';
+        content: 'Developer.';
     }
     50%{
-        content: 'Designer';
+        content: 'Designer.';
     }
     100%{
-        content: 'Developer';
+        content: 'Developer.';
     }
 }
+
+
+.wrapper span {
+  }
+
+  span {
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: 0.05em 0 0 #A99CD9, -0.03em -0.04em 0 #6BCCF2,
+      0.025em 0.04em 0 #D9043D;
+    animation: glitch 725ms infinite;
+  }
+  
+  .glitch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .glitch span:first-child {
+    animation: glitch 500ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+    transform: translate(-0.04em, -0.03em);
+    opacity: 0.75;
+  }
+  
+  .glitch span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+    transform: translate(0.04em, 0.03em);
+    opacity: 0.75;
+  }
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 #A99CD9, -0.03em -0.04em 0 #6BCCF2,
+        0.025em 0.04em 0 #D9043D;
+    }
+    15% {
+      text-shadow: 0.05em 0 0 #A99CD9, -0.03em -0.04em 0 #6BCCF2,
+        0.025em 0.04em 0 #D9043D;
+    }
+    16% {
+      text-shadow: -0.05em -0.025em 0 #A99CD9, 0.025em 0.035em 0 #6BCCF2,
+        -0.05em -0.05em 0 #D9043D;
+    }
+    49% {
+      text-shadow: -0.05em -0.025em 0 #A99CD9, 0.025em 0.035em 0 #6BCCF2,
+        -0.05em -0.05em 0 #D9043D;
+    }
+    50% {
+      text-shadow: 0.05em 0.035em 0 #A99CD9, 0.03em 0 0 #6BCCF2,
+        0 -0.04em 0 #D9043D;
+    }
+    99% {
+      text-shadow: 0.05em 0.035em 0 #A99CD9, 0.03em 0 0 #6BCCF2,
+        0 -0.04em 0 #D9043D;
+    }
+    100% {
+      text-shadow: -0.05em 0 0 #A99CD9, -0.025em -0.04em 0 #6BCCF2,
+        -0.04em -0.025em 0 #D9043D;
+    }
+  }
