@@ -7,10 +7,6 @@
     color: white;
 }
 
-#name {
-    color: #D9043D;
-}
-
 header {
     background: black;
     position: fixed;
@@ -33,6 +29,7 @@ body {
         font-weight: 300;
         align-items: center;
         background-image: url("test5.jpg");
+        max-width: 1000px;
 }
 
 /* navigation */
